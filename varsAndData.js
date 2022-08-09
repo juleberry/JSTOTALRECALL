@@ -23,11 +23,11 @@
   define - giving the variable an initial value
 
 5. What is pseudocoding and why should you do it?
-  mapping out a design in "plain English" without any actual coding
-  pseudocoding helps organize your ideas
+  Pseudocoding is mapping out a design in "plain English" without any actual coding.
+  Pseudocoding helps organize your ideas.
 
 6. What percentage of time should be spent thinking about how you're going to solve a problem vs actually typing in code to solve it?
-  80% planning, 20% coding
+  80% planning and 20% coding. It is more important to plan an effective way to solve the problem so that coding it will be easier.
 
 */
 //------------------
@@ -37,12 +37,14 @@ let firstVariable = 'Hello World';
 firstVariable = 4;
 let secondVariable = firstVariable;
 secondVariable = 'Good Morning';
-// console.log(firstVariable);
+console.log(firstVariable);
 // firstVariable is 4
 let yourName = 'Jule';
-// console.log('Hello, my name is ' + yourName + '.');
+console.log('Hello, my name is ' + yourName + '.');
 
+//--------------------
 // ---- BOOLEANS ----
+//--------------------
   const a = 4;
   const b = 53;
   const c = 57;
@@ -70,3 +72,13 @@ let yourName = 'Jule';
   } else {
     console.log("Hey! You're not a cow.");
   }
+
+  // -----------------
+  // -- DRIVER'S ED --
+  // -----------------
+  let personAge = 18;
+  if (personAge >= 16) {
+    console.log('Here are the keys!');
+  } else {(personAge < 16); {
+    console.log("Sorry, you're too young.");
+  }}
