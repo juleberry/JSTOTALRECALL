@@ -85,9 +85,18 @@
 // should return one of largest nums
 // console.log(maxOfThree(2, 3, 3))
 
-// PRINT LONGEST WORD -- incomplete
-const printLongestWord = (str) => {
-  let arrOfStrings = []
+// PRINT LONGEST WORD
+const printLongestWord = (stringArray) => {
+  let longestWord = '';
+  let longestNum = 0;
+  for (let i = 0; i < stringArray.length; i++) {
+    let currentLength = stringArray[i].length;
+   if (currentLength > longestNum) {
+    longestWord = stringArray[i];
+    longestNum = currentLength;
+   }
+  }
+  return longestWord;
 }
 
-// console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
+console.log(printLongestWord(["BoJack", "Princess", "Diane", "a", "Max", "Peanutbutter", "big", "Todd"]));
