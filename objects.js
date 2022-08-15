@@ -1,4 +1,4 @@
-// JSTOTALRECALL
+// JSTOTALRECALL - W3D2
 // Group: Aminah Pitt, Courtney Moreland, Jule Berry, and Naima Kearney
 // -------------------
 // ---- OBJECTS ----
@@ -45,4 +45,33 @@ user.friend.age = 55;
 user.friend.purchased.push('The One Ring');
 user.friend.purchased.push('A latte');
 console.log(user.friend.purchased.indexOf('A latte'));
-console.log(user.friend.purchased[1])
+console.log(user.friend.purchased[1]);
+
+console.log('-----------------------');
+
+// LOOPS 1 -- iterate over User's purchased array
+for (let i = 0; i < user.purchased.length; i++) {
+  console.log(user.purchased[i]);
+}
+
+console.log('-------------------');
+
+// LOOPS 2 -- iterate over Friend's purchased array
+for (let i = 0; i < user.friend.purchased.length; i++) {
+  console.log(user.friend.purchased[i]);
+}
+
+// FUNCTIONS CAN OPERATE ON OBJECTS
+const updateUser = () => {
+  user.age++;
+  user.name.toUpperCase();
+  console.log(user.name);
+}
+
+const oldAndLoud = (person) => {
+  person.age++;
+  person.name.toUpperCase();
+  console.log(person.name);
+}
+
+oldAndLoud(user);
